@@ -1,0 +1,13 @@
+.tableContainer {
+  margin: auto;
+  .table {
+    margin: 0;
+    .nameCell {
+      border-bottom: none;
+      font-size: 1.6rem;
+    }
+    .deleteCell {
+      cursor: pointer;
+    }
+  }
+}
