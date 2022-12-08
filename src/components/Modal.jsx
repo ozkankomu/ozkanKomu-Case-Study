@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
 const Modal = ({ postData }) => {
+  const { v4: uuidv4 } = require("uuid");
+  console.log(uuidv4());
+
   const [form, setForm] = useState({
     id: "",
     name: "",
@@ -13,7 +16,7 @@ const Modal = ({ postData }) => {
     const { name, value } = e.target;
     setForm({
       ...form,
-      id: Math.ceil(Math.random() * 10000),
+      id: uuidv4(),
       [name]: value,
     });
   };
@@ -117,7 +120,7 @@ const Modal = ({ postData }) => {
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   >
-                    Add Task
+                    Add Cargo
                   </button>
                 </div>
               </form>

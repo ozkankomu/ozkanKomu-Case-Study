@@ -11,34 +11,35 @@ const Table = ({ task, search, deleteData }) => {
   const [notFound, setNotFound] = useState(
     "The cargo information you were looking for was not found 😔"
   );
-  const [filter, setFilter] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
   const filtered = () => {
     const data = task?.filter(
       (item) =>
         item?.name?.toLowerCase().includes(search) ||
         item?.policyNo?.toLowerCase().includes(search)
     );
-    setFilter(data);
+    setFilteredData(data);
   };
 
   useEffect(() => {
     filtered();
-  }, [search]);
+  }, [search, task]);
 
   return (
     <div className="tableContainer" data-testid="table">
       {!(charCode === 32) && search && (
         <div className="div">
-          {filter.length > 0 ? (
-            filter?.map((item, index) => {
+          {filteredData.length > 0 ? (
+            filteredData?.map((item) => {
               const { id, name, email, phone, policyNo } = item;
+              console.log(id);
               return (
                 <div className="MainChild" key={id}>
-                  {filter && (
+                  {filteredData && (
                     <div className="container ">
                       <div className="nameDiv">{name}</div>
 
-                      <div className="row  ">
+                      <div className="row">
                         <div className=" col-sm-12 col-md-6 col-lg-3 col-xl-3 divIcon">
                           <p>
                             <PhoneIcon className="icon" /> {phone}

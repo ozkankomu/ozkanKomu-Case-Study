@@ -11,7 +11,6 @@ function App() {
   const getData = async () => {
     try {
       const response = await fetch(url);
-
       const data = await response.json();
       setTask(data);
     } catch (error) {
@@ -30,9 +29,9 @@ function App() {
       toastwarn(error);
     }
   };
-  const deleteData = async (id) => {
+  const deleteData = (id) => {
     try {
-      await axios.delete(url + `/${id}`);
+      axios.delete(url + `/${id}`);
       getData();
       toastwarn("Cargo information deleted successfuly");
     } catch (error) {

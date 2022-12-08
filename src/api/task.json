@@ -8,7 +8,7 @@
       "policyNo": "0013983887|0013983887 "
     },
     {
-      "id": 3,
+      "id": 1256,
       "name": "Anabella Samuel",
       "phone": "+27-61-453-5444",
       "email": "ann.lieb@gmail.com",
@@ -29,23 +29,9 @@
       "policyNo": "0022365478|0022365478"
     },
     {
-      "id": 626,
-      "name": "Alexander",
-      "phone": "Max",
-      "email": "max@gmail.com",
-      "policyNo": "0011226325||0011226325"
-    },
-    {
-      "id": 8571,
-      "name": "Alice",
-      "phone": "+27-54-635-5698",
-      "email": "alice@gmail.com",
-      "policyNo": "0011276328"
-    },
-    {
-      "id": 280,
-      "name": "özkan",
-      "phone": "530-6488387",
+      "id": "616c7968-c2dc-46d0-ae51-6fab4e6f76cd",
+      "name": "Ozkan",
+      "phone": "05306488387",
       "email": "ozkankomu35@gmail.com",
       "policyNo": "0011359864|0011359864"
     }
