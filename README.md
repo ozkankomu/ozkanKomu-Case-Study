@@ -38,11 +38,13 @@
 - Sass   
 
 
-CASE DESCRIPTION : In my case study, I used Json-Server Api as database. I pulled data from Api using Axios and Async-Await structure. I added an Add Cargo button to enter new cargo information under SerchInput. A modal opens when the Add Cargo button is pressed. In the module that opens, when the cargo information is entered and the Add Cargo button is pressed, the post process is performed with axios and new cargo information is added to the database. When any entry is made to Serach Input, the data is rendered to the table. If a space is entered, no filtering is performed. Search can be made by name or policy number. If an unavailable data is searched, the text not found is displayed. Tostify messages are issued after each successful or unsuccessful transaction. When the search is made, the matching data is printed on the screen. A delete button has been added for each cargo information. Here, when the delete button is pressed, a new post operation is made to the api. The data is deleted from the screen and from the database. I used the React testinng Library library for testing. The test process can be started with the yarn test command to be written to the terminal.
+CASE DESCRIPTION : In my case study, I used Json-Server Api as database. I pulled data from Api using Axios and Async-Await structure. I added an Add Cargo button to enter new cargo information under SerchInput. A modal opens when the Add Cargo button is pressed. In the module that opens, when the cargo information is entered and the Add Cargo button is pressed, the post process is performed with axios and new cargo information is added to the database. When any entry is made to Serach Input, the data is rendered to the table. If a space is entered, no filtering is performed. Search can be made by name or policy number. If an unavailable data is searched, the text not found is displayed. Tostify messages are issued after each successful or unsuccessful transaction. When the search is made, the matching data is printed on the screen. A delete button has been added for each cargo information. Here, when the delete button is pressed, a new post operation is made to the api. The data is deleted from the screen and from the database. I used bootstrap for responsive design. I used the React testinng Library library for testing. The test process can be started with the yarn test command to be written to the terminal.
+
+
 ## Project Skeleton
 
 ```
-bootstrap-website(folder)
+ My Case Study (folder)
 
 |----public
      |----index.html
