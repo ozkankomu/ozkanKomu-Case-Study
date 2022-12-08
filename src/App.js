@@ -9,21 +9,36 @@ function App() {
   const url = " http://localhost:3002/task";
 
   const getData = async () => {
-    const response = await fetch(url);
+    try {
+      const response = await fetch(url);
 
-    const data = await response.json();
-    setTask(data);
+      const data = await response.json();
+      setTask(data);
+    } catch (error) {
+      console.log(error);
+      toastwarn(error);
+    }
   };
 
   const postData = async (data) => {
-    await axios.post(url, data);
-    getData();
-    toastsuccess("New Cargo Added Successfully");
+    try {
+      await axios.post(url, data);
+      getData();
+      toastsuccess("New Cargo Added Successfully");
+    } catch (error) {
+      console.log(error);
+      toastwarn(error);
+    }
   };
   const deleteData = async (id) => {
-    await axios.delete(url + `/${id}`);
-    getData();
-    toastwarn("Cargo information deleted successfuly");
+    try {
+      await axios.delete(url + `/${id}`);
+      getData();
+      toastwarn("Cargo information deleted successfuly");
+    } catch (error) {
+      console.log(error);
+      toastwarn(error);
+    }
   };
 
   useEffect(() => {
@@ -31,7 +46,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div data-testid="app">
       <Home task={task} postData={postData} deleteData={deleteData} />
     </div>
   );

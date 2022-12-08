@@ -1,13 +1,50 @@
+@import "../scss/variables";
+
+//! Table section ////
+
 .tableContainer {
   margin: auto;
-  .table {
-    margin: 0;
-    .nameCell {
-      border-bottom: none;
-      font-size: 1.6rem;
+  padding: 0rem;
+  .MainChild:nth-child(odd) {
+    background-color: $lightGray;
+  }
+  .MainChild:hover {
+    background-color: $darkGray;
+  }
+
+  .container {
+    .nameDiv {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin-top: 1rem;
     }
-    .deleteCell {
-      cursor: pointer;
+
+    .divIcon {
+      padding: 0;
+      margin: 0;
+      p {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        margin: 0.5rem 1.3rem;
+        padding: 0;
+        cursor: pointer;
+        .icon {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  //! notFound Msg Seciton ////
+  .messageDiv {
+    text-align: center;
+    .message {
+      padding: 0;
+      margin: 0;
+      color: darkred;
     }
   }
 }

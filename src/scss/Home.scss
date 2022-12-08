@@ -3,8 +3,11 @@
   margin: 2rem auto;
   padding: 0;
   border: 4px solid black;
-  width: 50rem;
+  width: 80%;
   height: fit-content;
+  overflow: hidden;
+  border-radius: 1rem;
+
   .containerSearch {
     width: 100%;
     display: flex;
@@ -18,6 +21,7 @@
       color: $white;
       background-color: $blueGray;
       border: none;
+      padding: 0.5rem;
 
       &:hover {
         transform: scale(1.1);

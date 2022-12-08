@@ -24,7 +24,7 @@ const Modal = ({ postData }) => {
   };
 
   return (
-    <div>
+    <div data-testid="modal">
       <div
         className="modal fade"
         id="exampleModal"

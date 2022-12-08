@@ -16,7 +16,7 @@ const Home = ({ task, postData, deleteData }) => {
   };
   const [search, setSearch] = React.useState("");
   return (
-    <div className="main">
+    <div className="main" data-testid="home">
       <div className="containerSearch">
         <div className="searchBox">
           <SearchIcon className="searchIcon" />
