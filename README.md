@@ -97,9 +97,6 @@ CASE DESCRIPTION : In my case study, I used Json-Server Api as database. I pulle
 - Testing Button
 - Testing Input
 
-<p align="center">
-<img  src="./src/assets/test-coverage.png" alt="screenshot">
-</p>
 
 
 ## Author
