@@ -6,7 +6,7 @@ import { toastsuccess, toastwarn } from "./toastify/Toastify";
 
 function App() {
   const [task, setTask] = useState([]);
-  const url = " http://localhost:3002/task";
+  const url = " https://63927eabac688bbe4c64aa3c.mockapi.io/users/";
 
   const getData = async () => {
     try {
@@ -31,7 +31,7 @@ function App() {
   };
   const deleteData = (id) => {
     try {
-      axios.delete(url + `/${id}`);
+      axios.delete(url + `${id}`);
       getData();
       toastwarn("Cargo information deleted successfuly");
     } catch (error) {

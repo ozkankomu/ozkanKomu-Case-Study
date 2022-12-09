@@ -8,6 +8,8 @@ import "../scss/Table.scss";
 const Table = ({ task, search, deleteData }) => {
   const charCode = search?.charCodeAt(0);
 
+  console.log(task);
+
   const [notFound, setNotFound] = useState(
     "The cargo information you were looking for was not found 😔"
   );

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const Modal = ({ postData }) => {
   const { v4: uuidv4 } = require("uuid");
-  console.log(uuidv4());
 
   const [form, setForm] = useState({
     id: "",
