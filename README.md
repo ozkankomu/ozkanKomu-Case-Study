@@ -37,7 +37,7 @@
 - react-toastify
 
 
-## CASE DESCRIPTION : 
+CASE DESCRIPTION : 
 	
 	In my case study, I used Mock Api as database. I pulled data from Api using Axios and Async-Await structure. 
 
