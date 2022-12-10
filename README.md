@@ -83,7 +83,7 @@ CASE DESCRIPTION : In my case study, I used Mock Api as database. I pulled data 
 ## Component Structure
 
 <p align="center">
-<img  src="./table.jpg" alt="screenshot">
+<img  src="./table1.jpg" alt="screenshot">
 </p>
 
 ## Testing Content
