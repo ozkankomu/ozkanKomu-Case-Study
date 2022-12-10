@@ -50,7 +50,7 @@
 		
 	I used the React testinng Library library for testing. You can reach the live version of the codes from the links. You can perform the tests from the terminal with " yarn test --coverage " and get the coverage report. (While I was working on the Case, I had to take my daughter to the hospital due to a sudden illness. Due to the lack of time to complete the case, the Test coverage rate was a little low. If requested, I can write Test again with a more detailed and higher coverage rate. )
 	
-	Not: I didn't want to create .env file because Github .env files sometimes give errors. This is the reason why I use direct    Api URL   and not use .env in my get and post operations.
+	Not: I didn't want to create .env file because sometimes Github cant read .env files so gives errors. This is the reason why I use direct    Api URL   and not use .env in my get and post operations.
 
 
 ## Project Skeleton
