@@ -8,8 +8,6 @@ import "../scss/Table.scss";
 const Table = ({ task, search, deleteData }) => {
   const charCode = search?.charCodeAt(0);
 
-  console.log(task);
-
   const [notFound, setNotFound] = useState(
     "The cargo information you were looking for was not found 😔"
   );
@@ -34,7 +32,7 @@ const Table = ({ task, search, deleteData }) => {
           {filteredData.length > 0 ? (
             filteredData?.map((item) => {
               const { id, name, email, phone, policyNo } = item;
-              console.log(id);
+
               return (
                 <div className="MainChild" key={id}>
                   {filteredData && (

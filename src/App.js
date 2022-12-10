@@ -14,8 +14,7 @@ function App() {
       const data = await response.json();
       setTask(data);
     } catch (error) {
-      console.log(error);
-      toastwarn(error);
+      toastwarn(error.message);
     }
   };
 
@@ -25,18 +24,16 @@ function App() {
       getData();
       toastsuccess("New Cargo Added Successfully");
     } catch (error) {
-      console.log(error);
-      toastwarn(error);
+      toastwarn(error.message);
     }
   };
-  const deleteData = (id) => {
+  const deleteData = async (id) => {
     try {
-      axios.delete(url + `${id}`);
+      await axios.delete(url + `${id}`);
       getData();
-      toastwarn("Cargo information deleted successfuly");
+      toastsuccess("Cargo information deleted successfuly");
     } catch (error) {
-      console.log(error);
-      toastwarn(error);
+      toastwarn(error.message);
     }
   };
 
