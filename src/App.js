@@ -8,6 +8,8 @@ function App() {
   const [task, setTask] = useState([]);
   const url = " https://63927eabac688bbe4c64aa3c.mockapi.io/users/";
 
+  // Functions for Get , Post and Delete
+
   const getData = async () => {
     try {
       const response = await fetch(url);
