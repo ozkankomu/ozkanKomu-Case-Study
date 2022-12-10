@@ -37,7 +37,9 @@
 - react-toastify
 
 
-	CASE DESCRIPTION : In my case study, I used Mock Api as database. I pulled data from Api using Axios and Async-Await structure. 
+## CASE DESCRIPTION : 
+	
+	In my case study, I used Mock Api as database. I pulled data from Api using Axios and Async-Await structure. 
 
 	I added an Add Cargo button to enter new cargo information under SerchInput. A modal opens when the Add Cargo button is pressed. In the module that opens, when the cargo information is entered and the Add Cargo button is pressed, the post process is performed with axios and new cargo information is added to the database. 
 	
