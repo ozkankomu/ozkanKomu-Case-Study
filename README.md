@@ -94,7 +94,6 @@
          |----package.json
          |----Readme
 ```
-
 ## Component Structure
 
 <p align="center">
